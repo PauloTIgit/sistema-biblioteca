@@ -54,7 +54,7 @@ composer install
 
 ### 3. Configurando o Ambiente
 
-Copie o arquivo .env.example para .env e configure as credenciais do banco de dados:
+Copie o arquivo ```.env.example``` para ```.env``` e configure as credenciais do banco de dados:
 
 ```bash
 
@@ -62,7 +62,7 @@ cp .env.example .env
 
 ```
 
-Abra o arquivo .env e configure as variáveis de banco de dados, como nome do banco, usuário e senha:
+Abra o arquivo ```.env``` e configure as variáveis de banco de dados, como nome do banco, usuário e senha:
 
 ```env
 
