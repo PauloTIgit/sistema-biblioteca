@@ -91,7 +91,7 @@
         color: #fff;
     }
 
-    .due_date{
+    .return_date{
         font-size: .9rem;
         font-weight: 600;
         color: #891a1a;
@@ -117,7 +117,7 @@
                     <p><strong>Status:</strong> {{ $loan->status }}</p>
                 </div>
                 <div>
-                    <p class="due_date">Devolução: {{ $loan->due_date }}</p>
+                    <p class="return_date">Devolução: {{ $loan->return_date }}</p>
                 </div>
             </div>
             @endif

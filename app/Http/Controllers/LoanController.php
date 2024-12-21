@@ -70,7 +70,7 @@ class LoanController extends Controller
         $created = $this->loan->create([
             'user_id' => $request->input('user_id'),
             'book_id' => $request->input('book_id'),
-            'due_date' => $request->input('due_date'),
+            'return_date' => $request->input('return_date'),
             'status' => $request->input('status'),
         ]);
 
@@ -145,7 +145,7 @@ class LoanController extends Controller
             $updated = $this->loan->where('id', $id)->update([
                 'user_id' => $request->input('user_id'),
                 'book_id' => $request->input('book_id'),
-                'due_date' => $request->input('due_date'),
+                'return_date' => $request->input('return_date'),
                 'status' => $request->input('status'),
             ]);
     

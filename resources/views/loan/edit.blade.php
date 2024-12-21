@@ -120,8 +120,8 @@
         </div>
 
         <div class="col-100">
-            <label for="due_date">Devolução:</label>
-            <input type="date" name="due_date" value="{{ $loan->due_date }}" required>
+            <label for="return_date">Devolução:</label>
+            <input type="date" name="return_date" value="{{ $loan->return_date }}" required>
         </div>
 
         <div class="col-100">

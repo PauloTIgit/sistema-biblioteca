@@ -117,7 +117,7 @@
 
     @if ($books->isEmpty())
         <div class="empty-message">
-            <p>Nenhum livro cadastrado no momento.</p>
+            <p style=" padding: 5rem 0;  text-align: center; font-size: 16px; color: #555;">Nenhum livro cadastrado no momento.</p>
         </div>
     @else
         <ul class="users-list">

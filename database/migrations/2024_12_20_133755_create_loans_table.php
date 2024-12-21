@@ -13,11 +13,15 @@ return new class extends Migration
     {
         Schema::create('loans', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
-            $table->foreignId('book_id')->constrained('books')->onDelete('cascade');
-            $table->date('due_date');
-            $table->enum('status', ['Atrasado', 'Devolvido', 'Pendente'])->default('Pendente');
+            $table->unsignedBigInteger('book_id');
+            $table->unsignedBigInteger('user_id');
+            $table->date('return_date');
+            $table->enum('status', ['atrasado', 'devolvido', 'pendente'])->default('pendente');
             $table->timestamps();
+    
+            // Chaves estrangeiras
+            $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

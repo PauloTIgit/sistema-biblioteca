@@ -127,8 +127,8 @@
             </select>
         </div>
         <div class="col-100">
-            <label for="due_date">Devolução:</label>
-            <input type="date" name="due_date" placeholder="00/00/0000" required>
+            <label for="return_date">Devolução:</label>
+            <input type="date" name="return_date" placeholder="00/00/0000" required>
         </div>
 
         <div class="col-100">

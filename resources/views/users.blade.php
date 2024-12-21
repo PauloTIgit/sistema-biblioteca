@@ -116,7 +116,7 @@
     </nav>
     
     @if ($users->isEmpty())
-        <p class="text-center" style="font-size: 16px; color: #555;">Nenhum cliente cadastrado.</p>
+        <p class="text-center" style=" padding: 5rem 0;  text-align: center; font-size: 16px; color: #555;">Nenhum cliente cadastrado no momento.</p>
     @else
         <ul class="users-list">
             @foreach ($users as $user)

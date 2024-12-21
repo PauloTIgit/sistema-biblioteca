@@ -16,7 +16,7 @@
     
     @if ($genres->isEmpty())
         <div class="empty-message">
-            <p>Nenhum gênero cadastrado.</p>
+            <p style=" padding: 5rem 0;  text-align: center; font-size: 16px; color: #555;">Nenhum gênero cadastrado no momento.</p>
             <a href="{{ route('genres.create') }}" class="btn-primary">Cadastrar Gênero</a>
         </div>
     @else

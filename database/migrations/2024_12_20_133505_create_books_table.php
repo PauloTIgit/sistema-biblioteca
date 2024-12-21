@@ -11,14 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('books', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('author');
-            $table->enum('status', ['emprestado', 'disponivel'])->default('Disponível');
-            $table->foreignId('genre_id')->constrained('genres')->onDelete('cascade');
-            $table->timestamps();
-        });
+        if (!Schema::hasTable('books')) {
+            Schema::create('books', function (Blueprint $table) {
+                $table->id();
+                $table->string('name');
+                $table->string('author');
+                $table->enum('status', ['emprestado', 'disponivel'])->default('Disponível');
+                $table->unsignedBigInteger('genre_id');
+                $table->timestamps();
+
+                $table->foreign('genre_id')->references('id')->on('genres')->onDelete('cascade');
+            });
+        }
+        
     }
 
     /**

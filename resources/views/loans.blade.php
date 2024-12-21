@@ -83,7 +83,7 @@
         margin-bottom: 10px;
     }
 
-    .user-card .due_date {
+    .user-card .return_date {
         font-size: 14px;
         font-weight: bold;
         color: #e63946;
@@ -115,7 +115,7 @@
         </ul>
     </nav>
     
-    <p>{{ $loans->isEmpty() ? 'Nenhuma locação cadastrada no momento.' : '' }}</p>
+    <p style=" padding: 5rem 0;  text-align: center; font-size: 16px; color: #555;">{{ $loans->isEmpty() ? 'Nenhuma locação cadastrada no momento.' : '' }}</p>
 
     <ul class="users-list">
         @foreach ($loans as $loan)
