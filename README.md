@@ -36,8 +36,8 @@ Clone o repositório para sua máquina local utilizando o comando:
 
 ```bash
 
-git clone https://github.com/usuario/repositorio.git
-cd repositorio
+git clone https://github.com/PauloTIgit/sistema-biblioteca
+cd sistema-biblioteca
 
 ```
 
